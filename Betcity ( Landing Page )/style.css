@@ -1,0 +1,584 @@
+body {
+    background-color: #f6f7f8;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #38bbff;
+}
+
+.logo {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.logo2 {
+    display: none;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+}
+
+.textPC {
+    margin-top: 15px;
+    width: 45%;
+}
+
+.textMobile {
+    display: none;
+}
+
+.website {
+    position: relative;
+}
+
+.blueBackground {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 3;
+    padding: 0;
+    margin-top: 260px;
+    width: 100%;
+    height: 610px;
+    background-image: url("img/blueBackground.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.background {
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    background-image: url("img/Vector Smart Object.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
+}
+
+.wrapper {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    background-position: center;
+    height: 774px;
+}
+
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.firstSvg {
+    z-index: 2;
+    margin-top: 15px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+.svgPC {
+    height: 120px;
+}
+
+.svgMobile {
+    display: none;
+}
+
+
+
+/* PRIZES */
+
+.prizes {
+    margin-top: 70px;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+/* GLASS AND CAP */
+
+.glassCap {
+    margin-right: 50px;
+    margin-top: 75px;
+    position: relative;
+}
+
+.cap {
+    margin-top: 80px;
+}
+
+.cap img {
+    height: 140px;
+}
+
+.emptyGlass{
+    margin-top: 30px;
+    margin-left: 145px;
+    position: absolute;
+}
+
+.emptyGlass img {
+    height: 190px;
+}
+
+
+/* BAG */
+
+
+.bagImg {
+    height: 250px;
+    margin-top: -55px;
+}
+
+.bagImg img {
+    height: 375px;
+}
+
+/* GLASS AND BEG */
+
+.glassKeg {
+    position: relative;
+}
+
+.keg {
+    margin-left: 80px;
+}
+
+.keg img {
+    height: 300px;
+}
+
+.Glass{
+    margin-right: 50px;
+    margin-top: 120px;
+    position: absolute;
+}
+
+.Glass img {
+    height: 200px;
+}
+
+
+
+
+/* SECOND SVG  */
+
+.svgSecond {
+    margin-top: 18px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.come {
+    width: 100%;
+    height: 50px;
+}
+
+.come img {
+    width: 500px;
+}
+
+
+.locations {
+    width: 80%;
+    margin-top: 340px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.location {
+    color: white;
+    font-family: sans-serif;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.location img {
+    margin-left: 40%;
+    width: 60px;
+    height: 80px;
+}
+
+.location1 {
+    width: 100%;
+    text-align: center;
+}
+
+.location11 b {
+    font-size: 1.6em;
+}
+
+.location {
+    text-align: center;
+}
+
+.secondBlue {
+    position: absolute;
+    z-index: 1;
+    margin-top: 650px;
+    width: 100%;
+    height: 200px;
+    background-color: #0062ab;
+}
+
+
+
+
+
+/* MAP */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content{
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+iframe {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 600px;
+}
+
+.modal-content, #caption {
+    -webckit-animation-name:zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name:zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom{
+    from{-webkit-transform: scale(0)}
+    to{-webkit-transform: scale(1)}
+}
+@keyframes zoom {
+    from{transform: scale(0)}
+    to{transform: scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover, .close:focus{
+    color: #ddd;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 700px) {
+    modal.content{width: 100%}
+}
+
+/*          АДАПТАЦИЯ       */
+
+@media only screen and (max-width: 1024px) {
+
+    .textPC {
+        margin-left: -200px;
+    }
+
+    .prizes {
+        width: 100%;
+    }
+
+    .locations {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 724px) {
+
+    /* BACKGROUND */
+    .background {
+        margin-top: 300px;
+        height: 1200px;
+    }
+
+    /* TEXT */
+    .textPC {
+        display: none;
+    }
+
+    .textMobile {
+        margin-top: 30px;
+        display: block;
+    }
+
+    /* SVG */
+
+    .svgPC {
+        display: none;
+    }
+
+    .svgMobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .svgMobile img {
+        height: 50px;
+    }
+
+    /* PRIZES*/
+
+
+    .content {
+        height: 1200px;
+    }
+
+    .prizes {
+        flex-direction: column;
+    }
+
+    .glassCap {
+        margin: auto;
+        width: 300px;
+        height: 300px;
+    }
+    .bag {
+        margin: auto;
+        width: 300px;
+        height: 300px;
+    }
+    .glassKeg {
+        margin: auto;
+        width: 300px;
+        height: 300px;
+    }
+
+    /* SECOND SVG*/
+
+    .svgSecond {
+        margin-top: 170px;
+    }
+
+    .come img {
+        width: 400px;
+    }
+
+    /* Blue Background */
+
+    .blueBackground {
+        margin-top: 1350px;
+    }
+
+    .secondBlue {
+        height: 900px;
+        margin-top: 1800px;
+    }
+
+    /* Locations */
+
+    .locations {
+        flex-direction: column;
+        height: 1000px;
+    }
+
+    .location {
+        height: 200px;
+        margin: auto;
+    }
+
+}
+
+
+
+/* ________________________________________*/
+
+/*         Адаптация под iPhone 5/SE       */
+
+@media (min-width: 320px) and (max-width: 568px) {
+
+    .firstSvg {
+        height: 65px;
+    }
+
+    .modal{
+        width: 100%;
+        height: 100%;
+    }
+
+    iframe {
+        margin-right: auto;
+        width: 280px;
+        height: 320px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo2 {
+        display: flex;
+    }
+
+    .logo2 img {
+        margin: auto;
+    }
+
+
+    .svgMobile img {
+        margin-left: -10px;
+        width: 310px;
+    }
+
+    .content{
+        width: 100%;
+    }
+
+    .prizes {
+        height: 1200px;
+        width: 100%;
+    }
+
+    .glassCap {
+        margin-left: 50px;
+    }
+
+    .emptyGlass {
+        margin-left: 120px;
+    }
+
+    .glassKeg {
+        margin-left: 40px;
+    }
+
+    .bagImg img {
+        margin-left: 30px;
+    }
+
+    .come img {
+        width: 320px;
+    }
+
+    .wrapper {
+        width: 105%;
+    }
+
+    .background {
+        width: 105%;
+    }
+
+    .blueBackground {
+        width: 105%;
+    }
+
+    .secondBlue {
+        width: 105%;
+    }
+}
+
+/* _________________________________________*/
+
+/*         Адаптация под iPhone 6/7/8       */
+
+@media (min-width: 375px) and (max-width: 667px) {
+    .close {
+        margin-right: 30px;
+        margin-top: 30px;
+    }
+
+
+    .glassKeg {
+        margin-left: 70px;
+    }
+}
+
+/* ____________________________________________*/
+
+
+@media only screen and (min-width: 1800px) {
+    .secondBlue {
+        display: none;
+    }
+
+    .blueBackground {
+        margin-top: 270px;
+    }
+
+    .svgSecond {
+        margin-top: 25px;
+    }
+
+    .logo {
+        padding-top: 10px;
+    }
+
+    .background {
+        height: 560px;
+    }
+
+    .textPC {
+        margin-top: 15px;
+    }
+
+    .firstSvg img {
+        height: 120px;
+    }
+
+    .prizes {
+        width: 60%;
+        margin-top: 70px;
+    }
+
+    .bag img {
+        height: 380px;
+    }
+}
+
+
+@media only screen and (max-width: 860px) {
+    .location11 b {
+        font-size: 1.4em;
+    }
+}
