@@ -1,0 +1,287 @@
+body {
+    margin: 0;
+    background-color: #0e1d3a;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.button img {
+    cursor: pointer !important;
+}
+
+@font-face {
+    font-family: FoundryMonoline; /* Гарнитура шрифта */
+    src: url(fonts/FoundryMonoline.otf); /* Путь к файлу со шрифтом */
+}
+h1 {
+    font-family: FoundryMonoline, 'Comic Sans MS', cursive;
+}
+
+.gold-bet-mobile {
+    display: none;
+}
+
+.gold-bet-mobile img {
+    width: 220px;
+    height: 52px;
+}
+
+.scene {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    min-height: 100vh;
+}
+
+.layer {
+    position: absolute;
+    left: -5%;
+    top: 0;
+    width: 110%;
+    height: 100%;
+}
+
+
+.layer-1 {
+    background: url("img/object.png") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+}
+
+.content-row {
+    width: 100%;
+}
+
+
+.layer-2 {
+    background: url("img/metafan.png") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.weight img {
+    width: 90%;
+}
+
+.logo img {
+    width: 300px;
+    height: 71px;
+}
+
+
+.container {
+    display: flex;
+
+}
+
+.weight {
+    text-align: center;
+    display: flex;
+    align-items: end;
+    justify-content: right;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.text {
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.button {
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.button img {
+    width: 100%;
+}
+
+h1 {
+    font-family: FoundryMonoline, sans-serif;
+    font-size: 70px;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #fd4a03 10%, #fbfa55 30%, #fbfa55);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    filter: drop-shadow(0 0 15px #0f1d3a);
+}
+
+#small {
+    font-size: 44px;
+    height: 168px;
+}
+
+
+h1:before, h1:after {
+    content: attr(C);
+    color: rgba(255,255,255,.1);
+    position: absolute;
+}
+
+.content-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    height: 100%;
+}
+
+.vert-content-row {
+    margin-top: -110px;
+}
+
+
+
+.content-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100%;
+}
+/* Стили для очень больших экранов (ПК с большим монитором,
+дисплей 1200 пикселей и более) */
+@media (max-width: 1200px) {
+    .weight {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #small {
+        height: 192px;
+    }
+
+    .v-weight img{
+        width: 55%;
+    }
+
+    .gold-bet-mobile {
+        margin-top: 30px;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+    }
+    h1 {
+        font-size: 80px;
+    }
+
+    .button img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .weight {
+        width: 50%;
+    }
+
+    .gold-bet-mobile {
+        margin-top: 30px;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+    }
+    h1 {
+        font-size: 55px;
+    }
+    #small {
+        font-size: 35px;
+        height: 132px;
+    }
+
+    .button img {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 767px) and (min-width: 576px) {
+    .weight {
+        width: 50%;
+    }
+
+    .gold-bet-mobile {
+        margin-top: 30px;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+    }
+    h1 {
+        font-size: 50px;
+    }
+
+    #small {
+        font-size: 30px;
+        height: 120px;
+    }
+
+    .button img {
+        width: 100%;
+    }
+
+}
+@media (max-width: 576px) {
+    .text {
+        margin-left: -10px;
+    }
+    .button {
+        margin-top: 5px;
+    }
+    .text {
+        margin-top: 5px;
+    }
+    .weight {
+        width: 70%;
+    }
+    .v-weight img {
+        width: 65%;
+    }
+    .gold-bet-mobile {
+        margin-top: 30px;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+    }
+    h1 {
+        font-size: 36px;
+    }
+
+    #small {
+        font-size: 22px;
+        height: 86px;
+    }
+
+    .button img {
+        width: 60%;
+    }
+
+}
+@media (max-width: 320px) {
+    #small {
+        font-size: 24px;
+    }
+}
+
+
+.none {
+    display: none;
+}
